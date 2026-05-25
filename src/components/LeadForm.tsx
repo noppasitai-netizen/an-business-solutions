@@ -76,7 +76,7 @@ export default function LeadForm({
     { key: "year_closing", label: "ปิดงบการเงินประจำปี" },
     { key: "company_registration", label: "จดทะเบียนบริษัท/ VAT" },
     { key: "accounting_setup", label: "วางระบบบัญชีเอกสาร" },
-    { key: "ai_automation", label: "AI Workflow Setup" },
+    { key: "ai_automation", label: "Workflow Setup" },
     { key: "backlog_accounting", label: "เคลียร์บัญชีย้อนหลัง" },
   ];
 

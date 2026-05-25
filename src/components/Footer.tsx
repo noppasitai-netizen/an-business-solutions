@@ -18,14 +18,14 @@ export default function Footer() {
                 A&N Business Solutions
               </span>
               <span className="text-xs uppercase bg-brand-cyan/10 border border-brand-cyan/30 text-brand-cyan px-2 py-0.5 rounded-full flex items-center gap-1 font-mono">
-                <Cpu size={10} /> AI Accounting
+                <Cpu size={10} /> Smart Accounting
               </span>
             </div>
             <p className="text-xs text-slate-400 font-bold">
               บริษัท เอ แอนด์ เอ็น บิสซิเนส โซลูชั่นส์ จำกัด (เลขทะเบียนนิติบุคคล: 0115567033027)
             </p>
             <p className="text-xs text-slate-300 leading-relaxed max-w-md font-light">
-              สำนักงานบัญชีและที่ปรึกษาระบบบัญชีสำหรับ SME ไทย ที่ผสานการทำงานร่วมกันระหว่างนักบัญชีวิชาชีพผู้เชี่ยวชาญกับระบบ AI Automation ในการอำนวยความสะดวก Checklist ติดตามเอกสาร และควบคุมเดดไลน์ภาษี
+              สำนักงานบัญชีและที่ปรึกษาระบบบัญชีสำหรับ SME ไทย ที่ผสานการทำงานร่วมกันระหว่างนักบัญชีวิชาชีพผู้เชี่ยวชาญกับระบบอัตโนมัติในการอำนวยความสะดวก Checklist ติดตามเอกสาร และควบคุมเดดไลน์ภาษี
             </p>
           </div>
 

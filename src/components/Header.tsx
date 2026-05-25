@@ -23,7 +23,7 @@ export default function Header() {
     { label: "บริการ", href: "#services" },
     { label: "ทีมงาน", href: "#team" },
     { label: "รีวิว", href: "#testimonials" },
-    { label: "ระบบ AI", href: "#ai-workflow" },
+    { label: "ระบบงาน", href: "#ai-workflow" },
     { label: "ประเมินราคา", href: "#estimator" },
     { label: "แพ็กเกจ", href: "#pricing" },
     { label: "เดดไลน์ภาษี", href: "#deadlines" },
@@ -49,7 +49,7 @@ export default function Header() {
                 A&N
               </span>
               <span className="text-3xs sm:text-2xs uppercase bg-brand-cyan/10 border border-brand-cyan/35 text-brand-cyan px-2 py-0.5 rounded-full flex items-center gap-1 font-bold font-mono">
-                <Cpu size={10} className="animate-spin-slow text-brand-cyan" /> AI Office
+                <Cpu size={10} className="text-brand-cyan" /> Smart Office
               </span>
             </div>
             <span className="text-4xs sm:text-3xs uppercase tracking-wider text-slate-400 group-hover:text-slate-200 transition-colors font-medium">

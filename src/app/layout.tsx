@@ -23,8 +23,8 @@ const sarabun = Sarabun({
 });
 
 export const metadata: Metadata = {
-  title: "สำนักงานบัญชี SME ใช้ AI Automation | A&N Business Solutions",
-  description: "รับทำบัญชีรายเดือน ยื่นภาษี ปิดงบการเงิน ประกันสังคม งานทะเบียนบริษัท และวางระบบบัญชีสำหรับ SME พร้อม AI Automation ช่วยตรวจเอกสาร แจ้งเตือนเดดไลน์ และลดงานซ้ำ โดยทีมนักบัญชีหรือผู้ทำบัญชีตรวจทานก่อนยื่นจริง",
+  title: "สำนักงานบัญชี SME พร้อมระบบอัตโนมัติ | A&N Business Solutions",
+  description: "รับทำบัญชีรายเดือน ยื่นภาษี ปิดงบการเงิน ประกันสังคม งานทะเบียนบริษัท และวางระบบบัญชีสำหรับ SME พร้อมระบบคัดกรองเอกสาร แจ้งเตือนเดดไลน์ และลดงานซ้ำ โดยทีมนักบัญชีหรือผู้ทำบัญชีตรวจทานก่อนยื่นจริง",
   keywords: [
     "สำนักงานบัญชี",
     "รับทำบัญชีรายเดือน",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     "ปิดงบการเงินบริษัท",
     "ประกันสังคม",
     "จดทะเบียนบริษัท",
-    "บัญชี AI Automation",
+    "ระบบบัญชีอัตโนมัติ",
     "วางระบบบัญชี",
     "FlowAccount",
     "PEAK",
@@ -43,8 +43,8 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "A&N Business Solutions" }],
   openGraph: {
-    title: "สำนักงานบัญชี SME ใช้ AI Automation | A&N Business Solutions",
-    description: "รับทำบัญชีรายเดือน ยื่นภาษี ปิดงบการเงิน ประกันสังคม และวางระบบบัญชีสำหรับ SME ด้วย AI ช่วยสแกนและเตือนเดดไลน์ โดยทีมนักบัญชีหรือผู้ทำบัญชีตรวจทานก่อนบันทึกและยื่นแบบภาษีจริง",
+    title: "สำนักงานบัญชี SME พร้อมระบบอัตโนมัติ | A&N Business Solutions",
+    description: "รับทำบัญชีรายเดือน ยื่นภาษี ปิดงบการเงิน ประกันสังคม และวางระบบบัญชีสำหรับ SME ด้วยระบบคัดกรองเอกสารและแจ้งเตือนเดดไลน์ โดยทีมนักบัญชีหรือผู้ทำบัญชีตรวจทานก่อนบันทึกและยื่นแบบภาษีจริง",
     url: "https://www.annbusiness.com",
     siteName: "A&N Business Solutions",
     locale: "th_TH",
@@ -67,7 +67,7 @@ export default function RootLayout({
     "name": "บริษัท เอ แอนด์ เอ็น บิสซิเนส โซลูชั่นส์ จำกัด (A&N Business Solutions Co., Ltd.)",
     "alternateName": "A&N Business Solutions",
     "image": "https://www.annbusiness.com/logo.png",
-    "description": "สำนักงานบัญชีสำหรับ SME ไทย ให้บริการทำบัญชีรายเดือน ภาษีรายเดือน ประกันสังคม ปิดงบการเงิน วางระบบบัญชี และ AI Automation สำหรับงานบัญชี",
+    "description": "สำนักงานบัญชีสำหรับ SME ไทย ให้บริการทำบัญชีรายเดือน ภาษีรายเดือน ประกันสังคม ปิดงบการเงิน วางระบบบัญชี และระบบอัตโนมัติสำหรับงานบัญชี",
     "taxID": "0115567033027",
     "telephone": "098-912-3711",
     "email": "Noppasit@annbusiness.com",

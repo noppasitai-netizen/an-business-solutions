@@ -37,7 +37,7 @@ export default function Services() {
     },
     {
       icon: <Cpu className="text-brand-cyan" size={24} />,
-      title: "AI Automation งานบัญชี",
+      title: "ระบบอัตโนมัติงานบัญชี",
       text: "ออกแบบและเชื่อมต่อระบบการติดตามเอกสารผ่าน LINE, ระบบเตือนเดดไลน์อัตโนมัติ และ Dashboard รายงานผลการดำเนินงานแบบเรียลไทม์เฉพาะกิจการของคุณ",
     },
   ];

@@ -22,12 +22,12 @@ export default function Hero() {
             
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-tight">
               สำนักงานบัญชี SME <br />
-              ที่ใช้ <span className="bg-gradient-to-r from-brand-cyan via-brand-teal to-brand-gold-light bg-clip-text text-transparent glow-text-cyan">AI ช่วยตรวจ</span> <br />
+              ที่ใช้ <span className="bg-gradient-to-r from-brand-cyan via-brand-teal to-brand-gold-light bg-clip-text text-transparent glow-text-cyan">ระบบช่วยตรวจ</span> <br />
               เอกสาร ภาษี เดดไลน์ ไม่หลุดมือ
             </h1>
             
             <p className="text-slate-300 text-sm sm:text-base md:text-lg leading-relaxed max-w-xl">
-              <strong>ไม่ใช่แค่รับทำบัญชี แต่ช่วยให้เจ้าของกิจการเห็นสถานะเอกสาร ภาษี และเดดไลน์ก่อนปัญหาเกิด</strong> ด้วยระบบที่เชื่อมโยงนักบัญชีวิชาชีพผู้เชี่ยวชาญร่วมกับ AI Automation ในการคัดกรอง บันทึก จัดเก็บล่วงหน้า
+              <strong>ไม่ใช่แค่รับทำบัญชี แต่ช่วยให้เจ้าของกิจการเห็นสถานะเอกสาร ภาษี และเดดไลน์ก่อนปัญหาเกิด</strong> ด้วยระบบที่เชื่อมโยงนักบัญชีวิชาชีพผู้เชี่ยวชาญร่วมกับ workflow คัดกรอง บันทึก และจัดเก็บเอกสารล่วงหน้า
             </p>
 
             {/* Premium USP Bullets */}
@@ -45,7 +45,7 @@ export default function Hero() {
                   <CheckCircle2 size={16} />
                 </div>
                 <span className="text-slate-300 text-xs sm:text-sm">
-                  <strong>AI-assisted checklist</strong> ตรวจสอบจุดบกพร่องและเอกสารขาดทันที
+                  <strong>ระบบ checklist เอกสาร</strong> ตรวจสอบจุดบกพร่องและเอกสารขาดทันที
                 </span>
               </div>
               <div className="flex items-start gap-3">
@@ -69,7 +69,7 @@ export default function Hero() {
                   <Sparkles size={16} className="text-brand-gold-light" />
                 </div>
                 <span className="text-slate-300 text-xs sm:text-sm font-medium">
-                  <span className="text-brand-gold-light font-bold">นักบัญชีหรือผู้ทำบัญชีตรวจทานก่อนบันทึกบัญชีและยื่นแบบภาษี</span> (AI ช่วยจัดหมวดหมู่และแจ้งเตือนเดดไลน์ แต่ไม่ได้แทนนักบัญชี)
+                  <span className="text-brand-gold-light font-bold">AI ไม่แทนนักบัญชี ทีมตรวจทานก่อนยื่นทุกครั้ง</span> รวมถึงก่อนบันทึกบัญชีและยื่นแบบภาษี
                 </span>
               </div>
             </div>
@@ -114,14 +114,14 @@ export default function Hero() {
                 </div>
               </div>
 
-              {/* Parsing Action Simulation (AI Processing Indicator) */}
+              {/* Parsing action simulation */}
               <div className="bg-slate-950/70 p-3.5 rounded-xl border border-slate-900 mb-4 relative overflow-hidden">
                 <div className="flex justify-between items-center mb-2">
                   <div className="flex items-center gap-2">
                     <FileText size={14} className="text-brand-cyan" />
                     <span className="text-3xs font-semibold text-white font-mono">INV-2026-0048.pdf</span>
                   </div>
-                  <span className="text-4xs text-brand-cyan font-mono">AI Scanning...</span>
+                  <span className="text-4xs text-brand-cyan font-mono">Checking...</span>
                 </div>
                 {/* Scanner bar animation */}
                 <div className="w-full bg-slate-900 h-1.5 rounded-full relative overflow-hidden">
@@ -173,10 +173,10 @@ export default function Hero() {
                 </div>
               </div>
 
-              {/* AI Verification Workflow Details */}
+              {/* Verification workflow details */}
               <div className="space-y-3 bg-slate-900/50 p-3.5 rounded-xl border border-slate-800">
                 <div className="flex items-center justify-between text-xs">
-                  <span className="text-slate-300 flex items-center gap-1.5"><ShieldCheck size={14} className="text-brand-cyan" /> AI checklist status</span>
+                  <span className="text-slate-300 flex items-center gap-1.5"><ShieldCheck size={14} className="text-brand-cyan" /> Checklist status</span>
                   <span className="font-bold text-brand-cyan font-mono">94% Complete</span>
                 </div>
                 <div className="w-full bg-slate-800 h-1.5 rounded-full">
@@ -200,7 +200,7 @@ export default function Hero() {
                 <ShieldCheck size={18} />
               </div>
               <div className="text-left">
-                <span className="text-4xs text-slate-400 font-bold block uppercase tracking-wider">AI Check</span>
+                <span className="text-4xs text-slate-400 font-bold block uppercase tracking-wider">Document Check</span>
                 <span className="text-2xs font-extrabold text-white">ช่วยคัดกรองจุดผิดบิล</span>
               </div>
             </div>

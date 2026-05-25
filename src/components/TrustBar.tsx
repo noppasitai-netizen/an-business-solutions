@@ -22,7 +22,7 @@ export default function TrustBar() {
     },
     {
       icon: <Cpu className="text-brand-cyan" size={24} />,
-      title: "บัญชี + Automation",
+      title: "บัญชี + ระบบอัตโนมัติ",
       text: "ไม่ใช่แค่รับยื่นภาษี แต่ช่วยวางระบบหลังบ้าน เชื่อมโปรแกรมบัญชีชั้นนำ ให้ธุรกิจของคุณดำเนินงานได้ง่ายขึ้น",
     },
   ];
