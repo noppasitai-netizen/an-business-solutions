@@ -15,7 +15,7 @@ export default function AIWorkflowDemo() {
     },
     {
       num: "02",
-      title: "AI ช่วยจัดหมวดเบื้องต้น",
+      title: "ระบบช่วยจัดหมวดเบื้องต้น",
       text: "แยกซื้อ ขาย ค่าใช้จ่าย ใบกำกับภาษี ใบเสร็จ ใบหัก ณ ที่จ่าย และรายการที่ต้องตรวจเพิ่ม",
       icon: <Cpu className="text-brand-cyan" size={18} />
     },
@@ -47,18 +47,18 @@ export default function AIWorkflowDemo() {
 
   const tabContents = {
     missing: {
-      title: "รายงานเอกสารขาด/ไม่สมบูรณ์ (AI Auto-Checklist)",
+      title: "รายงานเอกสารขาด/ไม่สมบูรณ์ (Demo Checklist)",
       subtitle: "ระบบช่วยสแกนจุดบกพร่องในบิลเบื้องต้น เพื่อตามเอกสารได้ทันทีก่อนสิ้นเดือน",
       badge: "ตรวจพบ 3 รายการ",
       items: [
         {
-          name: "ใบกำกับภาษีซื้อ - บจก. สมาร์ท ออฟฟิศ (ยอดเงิน 15,200 บาท)",
+          name: "ใบกำกับภาษีซื้อ - บริษัทตัวอย่าง ก. จำกัด (ยอดเงิน 15,200 บาท)",
           issue: "ขาดเอกสารใบเสร็จรับเงินแนบประกอบ หรือหลักฐานชำระเงิน",
           status: "แจ้งเตือนใน LINE แล้ว",
           statusColor: "text-amber-400 bg-amber-500/10 border-amber-500/20"
         },
         {
-          name: "ใบเสร็จค่าไฟฟ้าออฟฟิศ - การไฟฟ้านครหลวง",
+          name: "ใบเสร็จค่าไฟฟ้าออฟฟิศ - บริษัทตัวอย่าง ข. จำกัด",
           issue: "ไม่ระบุเลขประจำตัวผู้เสียภาษี 13 หลักของบริษัทคุณ",
           status: "รอแก้ไขบิล",
           statusColor: "text-rose-400 bg-rose-500/10 border-rose-500/20"
@@ -85,7 +85,7 @@ export default function AIWorkflowDemo() {
         {
           name: "ภงด.3, ภงด.53 (หัก ณ ที่จ่าย) - รอบภาษีรายเดือน",
           issue: "รายการนำส่งหัก ณ ที่จ่าย 5 ยอด รวมเงินนำส่งภาษีสะสม 2,450 บาท",
-          status: "ยื่นแบบสำเร็จแล้ว (เลขอ้างอิง RD-28491)",
+          status: "ยื่นแบบสำเร็จแล้ว (ตัวอย่างสถานะ)",
           statusColor: "text-emerald-400 bg-emerald-500/10 border-emerald-500/20"
         },
         {
@@ -98,11 +98,11 @@ export default function AIWorkflowDemo() {
     },
     review: {
       title: "รายการรอความเห็นจากนักบัญชี (Human Accountant Review)",
-      subtitle: "รายการที่ AI สแกนพบความผิดปกติ หรือประเด็นความถูกต้องทางภาษีที่ต้องให้นักบัญชีตรวจสอบ",
+      subtitle: "รายการที่ระบบคัดกรองพบความผิดปกติ หรือประเด็นความถูกต้องทางภาษีที่ต้องให้นักบัญชีตรวจสอบ",
       badge: "รอตัดสินใจ 2 เรื่อง",
       items: [
         {
-          name: "ใบเสร็จค่ารับรองลูกค้า - ร้านอาหารญี่ปุ่นเกียวโต (ยอด 8,500 บาท)",
+          name: "ใบเสร็จค่ารับรองลูกค้า - ร้านอาหารตัวอย่าง (ยอด 8,500 บาท)",
           issue: "นักบัญชีแจ้งเตือน: ตรวจสอบว่าเป็นค่าใช้จ่ายรับรองลูกค้าตามระเบียบกรมสรรพากร (หักภาษีซื้อไม่ได้ แต่เป็นรายจ่ายบริษัทได้ไม่เกินโควตา)",
           status: "รอยืนยันรายชื่อแขก",
           statusColor: "text-amber-400 bg-amber-500/10 border-amber-500/20"
@@ -122,7 +122,7 @@ export default function AIWorkflowDemo() {
       items: [
         {
           name: "รายได้รวมสะสมเดือนปัจจุบัน (Estimated Income)",
-          issue: "ยอดรวม 480,000 บาท (เพิ่มขึ้น 12% เมื่อเทียบกับเดือนที่แล้ว)",
+          issue: "ยอดรวม 480,000 บาท (ตัวอย่างข้อมูลสำหรับอธิบายหน้ารายงาน)",
           status: "กำลังเติบโต",
           statusColor: "text-emerald-400 bg-emerald-500/10 border-emerald-500/20"
         },
@@ -149,13 +149,13 @@ export default function AIWorkflowDemo() {
         {/* Section Header */}
         <div className="max-w-3xl mx-auto text-center mb-16 flex flex-col gap-4">
           <div className="inline-flex items-center gap-2 self-center bg-brand-cyan/10 border border-brand-cyan/20 px-3 py-1 rounded-full text-xs text-brand-cyan font-medium">
-            <Cpu size={14} className="animate-spin-slow" /> AI Workflow
+            <Cpu size={14} /> ตัวอย่างการทำงานของระบบ (Demo)
           </div>
           <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-white">
-            ระบบ AI Automation ที่ช่วยให้งานบัญชีไม่กองปลายเดือน
+            ระบบจัดการเอกสารและเดดไลน์ที่ช่วยให้งานบัญชีไม่กองปลายเดือน
           </h2>
           <p className="text-slate-400 text-sm sm:text-base">
-            AI ไม่ได้มาแทนที่คน แต่ช่วยเพิ่มประสิทธิภาพการจัดส่งและตรวจเอกสารให้เร็วขึ้นถึง 80% โดยมีนักบัญชีมืออาชีพคอยควบคุมและตรวจทานอย่างละเอียดก่อนยื่นสรรพากรและกระทรวงพาณิชย์ทุกครั้ง
+            AI ไม่ได้มาแทนที่คน แต่ช่วยคัดกรองและจัดลำดับงานเอกสารเบื้องต้น โดยมีนักบัญชีมืออาชีพคอยควบคุมและตรวจทานอย่างละเอียดก่อนยื่นสรรพากรและกระทรวงพาณิชย์ทุกครั้ง
           </p>
         </div>
 
@@ -203,7 +203,7 @@ export default function AIWorkflowDemo() {
               <AlertCircle size={18} className={activeTab === "missing" ? "text-brand-cyan" : ""} />
               <div className="text-left">
                 <span className="text-xs font-semibold block">เอกสารขาด/ไม่สมบูรณ์</span>
-                <span className="text-3xs text-slate-400 block mt-0.5">AI ตรวจจับข้อผิดพลาดในบิล</span>
+                <span className="text-3xs text-slate-400 block mt-0.5">ระบบคัดกรองข้อผิดพลาดในบิล</span>
               </div>
             </button>
 

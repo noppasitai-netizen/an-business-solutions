@@ -44,13 +44,13 @@ export default function DashboardPreview() {
         {/* Header */}
         <div className="max-w-3xl mx-auto text-center mb-16 flex flex-col gap-4">
           <div className="inline-flex items-center gap-2 self-center bg-brand-cyan/10 border border-brand-cyan/20 px-3.5 py-1.5 rounded-full text-2xs text-brand-cyan font-bold tracking-wide uppercase">
-            <LayoutDashboard size={12} /> Client Portal
+            <LayoutDashboard size={12} /> ตัวอย่าง (Demo)
           </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-white">
             เจ้าของกิจการเห็นสถานะบัญชีและภาษีได้ทุกวัน
           </h2>
           <p className="text-slate-400 text-xs sm:text-sm max-w-xl mx-auto leading-relaxed">
-            ติดตามรายการความคืบหน้าการยื่นแบบภาษีรายเดือน ปริมาณบิลสะสม และแจ้งเตือนจุดบกพร่องจากระบบ AI Portal ของเราได้ตลอดเวลา
+            ติดตามรายการความคืบหน้าการยื่นแบบภาษีรายเดือน ปริมาณบิลสะสม และแจ้งเตือนจุดบกพร่องจากระบบพอร์ทัลของเราได้ตลอดเวลา
           </p>
         </div>
 
@@ -65,7 +65,7 @@ export default function DashboardPreview() {
                 <div className="w-3 h-3 rounded-full bg-amber-500/80" />
                 <div className="w-3 h-3 rounded-full bg-emerald-500/80" />
               </div>
-              <span className="text-4xs text-slate-500 font-mono hidden md:inline ml-3">https://portal.annbusiness.com/dashboard</span>
+              <span className="text-4xs text-slate-500 font-mono hidden md:inline ml-3">https://portal.annbusiness.com/dashboard/demo</span>
             </div>
             
             {/* Interactive Month Switcher Tabs */}
@@ -90,11 +90,11 @@ export default function DashboardPreview() {
 
             <div className="flex items-center gap-2.5">
               <div className="text-right">
-                <span className="text-4xs text-slate-300 font-bold block">บจก. สมาร์ท เทรดดิ้ง (สำนักงานใหญ่)</span>
-                <span className="text-5xs text-slate-500 font-mono tracking-wide block">เลขประจำตัว: 0105568940xxx</span>
+                <span className="text-4xs text-slate-300 font-bold block">บริษัทตัวอย่าง ก. จำกัด (สำนักงานใหญ่)</span>
+                <span className="text-5xs text-slate-500 font-mono tracking-wide block">ข้อมูลตัวอย่าง (Demo)</span>
               </div>
               <div className="w-8 h-8 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center text-brand-cyan text-xs font-bold font-mono">
-                ST
+                DM
               </div>
             </div>
           </div>
@@ -138,7 +138,7 @@ export default function DashboardPreview() {
                       </span>
                       <span className="text-5xs text-slate-500">รายการเอกสารขาดส่ง</span>
                     </div>
-                    <span className="text-5xs text-slate-500 block mt-2.5 font-medium">สแกนและตรวจสอบโดยระบบ AI Checklist</span>
+                    <span className="text-5xs text-slate-500 block mt-2.5 font-medium">คัดกรองและตรวจสอบโดยระบบ checklist</span>
                   </div>
                 </div>
 
