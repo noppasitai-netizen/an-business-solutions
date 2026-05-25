@@ -35,11 +35,14 @@ export default function Team() {
   ];
 
   return (
-    <section id="team" className="py-20 bg-slate-50 text-slate-950">
+    <section
+      id="team"
+      className="relative overflow-hidden border-y border-slate-900 bg-gradient-to-b from-[#050814] via-[#090f24] to-[#050814] py-20 text-slate-100 dashboard-grid-line"
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
           <div className="lg:col-span-5">
-            <div className="relative aspect-[4/5] w-full max-w-md mx-auto overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-xl shadow-slate-200/70">
+            <div className="glass-card relative aspect-[4/5] w-full max-w-md mx-auto overflow-hidden rounded-2xl border border-slate-800 bg-slate-950/70 shadow-2xl shadow-black/40">
               {showPhoto ? (
                 <Image
                   src={ownerPhotoSrc}
@@ -56,8 +59,8 @@ export default function Team() {
                     <UserRoundCheck size={44} />
                   </div>
                   <div className="space-y-2">
-                    <p className="text-sm font-bold text-slate-900">รูปเจ้าของสำนักงาน</p>
-                    <p className="text-xs leading-relaxed text-slate-600">
+                    <p className="text-sm font-bold text-white">รูปเจ้าของสำนักงาน</p>
+                    <p className="text-xs leading-relaxed text-slate-400">
                       TODO: เพิ่มไฟล์รูปจริงที่ public/team/owner.jpg ก่อนเผยแพร่หน้าเว็บจริง
                     </p>
                   </div>
@@ -72,40 +75,40 @@ export default function Team() {
             </div>
 
             <div className="mt-5 space-y-4">
-              <h2 className="text-3xl font-extrabold tracking-tight text-slate-950 sm:text-4xl">
+              <h2 className="text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
                 นพสิทธิ์ เอี่ยมลออธนี
               </h2>
-              <p className="text-base font-semibold text-slate-700">
+              <p className="text-base font-semibold text-brand-cyan">
                 กรรมการ
               </p>
-              <p className="max-w-2xl text-sm leading-relaxed text-slate-700 sm:text-base">
+              <p className="max-w-2xl text-sm leading-relaxed text-slate-300 sm:text-base">
                 ขึ้นทะเบียนผู้ทำบัญชีและปฏิบัติตามมาตรฐานวิชาชีพของสภาวิชาชีพบัญชีฯ
               </p>
             </div>
 
             <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-3">
               {qualifications.map((item) => (
-                <div key={item.label} className="rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
-                  <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-lg border border-brand-cyan/20 bg-brand-cyan/10">
+                <div key={item.label} className="glass-card rounded-xl border border-slate-800 bg-slate-950/60 p-5">
+                  <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-lg border border-brand-cyan/25 bg-brand-cyan/10">
                     {item.icon}
                   </div>
-                  <p className="min-h-[44px] text-xs font-semibold leading-snug text-slate-600">
+                  <p className="min-h-[44px] text-xs font-semibold leading-snug text-slate-300">
                     {item.label}
                   </p>
-                  <p className="mt-3 font-mono text-xl font-black text-slate-950">{item.value}</p>
+                  <p className="mt-3 font-mono text-xl font-black text-white">{item.value}</p>
                 </div>
               ))}
             </div>
 
-            <div className="mt-8 rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
-              <p className="text-xs font-bold uppercase tracking-wide text-slate-500">
+            <div className="glass-card mt-8 rounded-xl border border-slate-800 bg-slate-950/60 p-5">
+              <p className="text-xs font-bold uppercase tracking-wide text-slate-400">
                 ประสบการณ์ธุรกิจที่ดูแล
               </p>
               <div className="mt-4 flex flex-wrap gap-2">
                 {experienceAreas.map((area) => (
                   <span
                     key={area}
-                    className="rounded-full border border-brand-cyan/20 bg-brand-cyan/10 px-3 py-1.5 text-xs font-bold text-slate-700"
+                    className="rounded-full border border-brand-cyan/25 bg-brand-cyan/10 px-3 py-1.5 text-xs font-bold text-cyan-100"
                   >
                     {area}
                   </span>
