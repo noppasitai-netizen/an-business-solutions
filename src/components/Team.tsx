@@ -13,21 +13,25 @@ export default function Team() {
     {
       icon: <BadgeCheck size={18} className="text-brand-cyan" />,
       label: "เลขผู้ทำบัญชีขึ้นทะเบียน (สภาวิชาชีพบัญชี/TFAC)",
-      // TODO(owner): เติมเลขผู้ทำบัญชีขึ้นทะเบียนจริงก่อนเผยแพร่หรือ merge
-      value: "[...]",
+      value: "1100701975072",
     },
     {
       icon: <CalendarDays size={18} className="text-brand-cyan" />,
       label: "ประสบการณ์ (ปี)",
-      // TODO(owner): เติมจำนวนปีประสบการณ์จริงที่ตรวจสอบได้ก่อนเผยแพร่หรือ merge
-      value: "[...]",
+      value: "5 ปี",
     },
     {
       icon: <Building2 size={18} className="text-brand-cyan" />,
       label: "เลขนิติบุคคล 13 หลัก",
-      // TODO(owner): เติมเลขนิติบุคคลจริงที่ตรวจสอบได้ก่อนเผยแพร่หรือ merge
-      value: "[...]",
+      value: "0115567033027",
     },
+  ];
+
+  const experienceAreas = [
+    "ธุรกิจปั๊มน้ำมัน",
+    "ให้เช่าอสังหาริมทรัพย์",
+    "ให้เช่าพื้นที่ทำตลาด",
+    "ขายของออนไลน์ผ่านแพลตฟอร์ม",
   ];
 
   return (
@@ -39,7 +43,7 @@ export default function Team() {
               {showPhoto ? (
                 <Image
                   src={ownerPhotoSrc}
-                  alt="นพสิทธิ์ เอี่ยมละออธนู"
+                  alt="นพสิทธิ์ เอี่ยมลออธนี"
                   fill
                   sizes="(min-width: 1024px) 420px, 90vw"
                   className="object-cover"
@@ -69,10 +73,10 @@ export default function Team() {
 
             <div className="mt-5 space-y-4">
               <h2 className="text-3xl font-extrabold tracking-tight text-slate-950 sm:text-4xl">
-                นพสิทธิ์ เอี่ยมละออธนู
+                นพสิทธิ์ เอี่ยมลออธนี
               </h2>
               <p className="text-base font-semibold text-slate-700">
-                ผู้อำนวยการ / ผู้ทำบัญชีผู้รับผิดชอบ
+                กรรมการ
               </p>
               <p className="max-w-2xl text-sm leading-relaxed text-slate-700 sm:text-base">
                 ขึ้นทะเบียนผู้ทำบัญชีและปฏิบัติตามมาตรฐานวิชาชีพของสภาวิชาชีพบัญชีฯ
@@ -91,6 +95,22 @@ export default function Team() {
                   <p className="mt-3 font-mono text-xl font-black text-slate-950">{item.value}</p>
                 </div>
               ))}
+            </div>
+
+            <div className="mt-8 rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+              <p className="text-xs font-bold uppercase tracking-wide text-slate-500">
+                ประสบการณ์ธุรกิจที่ดูแล
+              </p>
+              <div className="mt-4 flex flex-wrap gap-2">
+                {experienceAreas.map((area) => (
+                  <span
+                    key={area}
+                    className="rounded-full border border-brand-cyan/20 bg-brand-cyan/10 px-3 py-1.5 text-xs font-bold text-slate-700"
+                  >
+                    {area}
+                  </span>
+                ))}
+              </div>
             </div>
           </div>
         </div>
