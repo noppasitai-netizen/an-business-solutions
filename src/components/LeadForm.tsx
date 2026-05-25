@@ -398,7 +398,7 @@ export default function LeadForm({
                     <button
                       type="submit"
                       disabled={isSubmitting}
-                      className="w-full inline-flex items-center justify-center gap-2 px-5 py-4 text-xs sm:text-sm font-extrabold text-brand-navy-dark bg-gradient-to-r from-brand-cyan to-brand-teal rounded-xl hover:shadow-[0_0_20px_rgba(6,182,212,0.45)] hover:scale-105 transition-all disabled:opacity-50"
+                      className="w-full inline-flex items-center justify-center gap-2 px-5 py-4 text-xs sm:text-sm font-extrabold text-brand-navy-dark bg-gradient-to-r from-brand-cyan to-brand-teal rounded-xl hover:shadow-[0_0_14px_rgba(6,182,212,0.28)] hover:scale-105 transition-all disabled:opacity-50"
                     >
                       {isSubmitting ? "กำลังส่งข้อมูลเข้าระบบ..." : "ส่งข้อมูลด่วนเพื่อขอใบเสนอราคาฟรี"}
                       <Send size={14} />
@@ -416,7 +416,7 @@ export default function LeadForm({
               ) : (
                 // Success Screen
                 <div className="text-center py-16 space-y-6 flex flex-col items-center">
-                  <div className="p-4 bg-emerald-500/10 border border-emerald-500/25 text-emerald-400 rounded-full shadow-[0_0_20px_rgba(16,185,129,0.15)]">
+                  <div className="p-4 bg-emerald-500/10 border border-emerald-500/25 text-emerald-400 rounded-full shadow-[0_0_12px_rgba(16,185,129,0.1)]">
                     <CheckCircle size={56} />
                   </div>
                   <div className="space-y-2.5">

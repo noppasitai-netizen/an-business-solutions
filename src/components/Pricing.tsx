@@ -144,7 +144,7 @@ export default function Pricing({ onSelectPackage }: PricingProps) {
               key={pkg.name}
               className={`rounded-2xl flex flex-col justify-between transition-all duration-300 relative ${
                 pkg.highlight
-                  ? "bg-gradient-to-b from-[#111e40] to-[#050814] border-2 border-brand-cyan shadow-[0_0_40px_rgba(6,182,212,0.2)] scale-105 z-10 lg:-translate-y-4"
+                  ? "bg-gradient-to-b from-[#111e40] to-[#050814] border-2 border-brand-cyan shadow-[0_0_26px_rgba(6,182,212,0.12)] scale-105 z-10 lg:-translate-y-4"
                   : "glass-card border border-slate-800 hover:border-slate-800"
               } p-6 sm:p-7`}
             >
@@ -201,7 +201,7 @@ export default function Pricing({ onSelectPackage }: PricingProps) {
                   onClick={() => handleSelect(pkg.name)}
                   className={`w-full py-3.5 px-4 rounded-xl text-2xs font-extrabold transition-all duration-300 ${
                     pkg.highlight
-                      ? "bg-gradient-to-r from-brand-cyan to-brand-teal text-brand-navy-dark shadow-[0_4px_12px_rgba(6,182,212,0.2)] hover:shadow-[0_0_20px_rgba(6,182,212,0.4)] hover:scale-105"
+                      ? "bg-gradient-to-r from-brand-cyan to-brand-teal text-brand-navy-dark shadow-[0_4px_10px_rgba(6,182,212,0.14)] hover:shadow-[0_0_14px_rgba(6,182,212,0.28)] hover:scale-105"
                       : "bg-slate-900 hover:bg-slate-800 text-slate-300 hover:text-white border border-slate-800"
                   }`}
                 >
@@ -216,7 +216,7 @@ export default function Pricing({ onSelectPackage }: PricingProps) {
         <div className="glass-card-premium border border-brand-teal/20 p-6 sm:p-8 rounded-2xl mb-12 flex flex-col md:flex-row items-center justify-between gap-6 shadow-xl">
           <div className="space-y-2 text-left">
             <h3 className="text-base sm:text-lg font-black text-white flex items-center gap-2">
-              <span className="w-2.5 h-2.5 rounded-full bg-brand-teal animate-pulse" />
+              <span className="w-2.5 h-2.5 rounded-full bg-brand-teal" />
               แพ็กเกจ Custom / Multi-Branch (หลายสาขา / รูปแบบซับซ้อน)
             </h3>
             <p className="text-slate-400 text-xs leading-relaxed max-w-3xl font-light">
@@ -228,7 +228,7 @@ export default function Pricing({ onSelectPackage }: PricingProps) {
             <span className="text-xl sm:text-2xl font-black text-brand-teal block mb-3 font-mono">12,000 บาท/เดือน</span>
             <button
               onClick={() => handleSelect("Custom / Multi-Branch")}
-              className="inline-flex items-center gap-1.5 px-5 py-3.5 text-2xs font-extrabold text-brand-navy-dark bg-gradient-to-r from-brand-cyan to-brand-teal rounded-xl hover:shadow-[0_0_15px_rgba(6,182,212,0.3)] transition-all hover:scale-105 active:scale-95"
+              className="inline-flex items-center gap-1.5 px-5 py-3.5 text-2xs font-extrabold text-brand-navy-dark bg-gradient-to-r from-brand-cyan to-brand-teal rounded-xl hover:shadow-[0_0_12px_rgba(6,182,212,0.22)] transition-all hover:scale-105 active:scale-95"
             >
               ขอใบเสนอราคาเฉพาะกรณี
               <ArrowRight size={12} />

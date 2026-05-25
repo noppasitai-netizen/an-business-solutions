@@ -132,7 +132,7 @@ export default function InteractiveEstimator({ onEstimateComplete }: EstimatorPr
                           onClick={() => setBusinessType(type)}
                           className={`px-3 py-3 rounded-xl text-2xs font-bold text-left border transition-all ${
                             businessType === type
-                              ? "bg-brand-cyan/10 text-brand-cyan border-brand-cyan/45 shadow-[0_0_12px_rgba(6,182,212,0.1)]"
+                              ? "bg-brand-cyan/10 text-brand-cyan border-brand-cyan/45 shadow-[0_0_8px_rgba(6,182,212,0.06)]"
                               : "bg-slate-950/60 border-slate-900 text-slate-400 hover:text-slate-200 hover:border-slate-800"
                           }`}
                         >
@@ -156,7 +156,7 @@ export default function InteractiveEstimator({ onEstimateComplete }: EstimatorPr
                           onClick={() => setHasVat(vat)}
                           className={`px-3 py-3 rounded-xl text-2xs font-bold text-center border transition-all ${
                             hasVat === vat
-                              ? "bg-brand-cyan/10 text-brand-cyan border-brand-cyan/45 shadow-[0_0_12px_rgba(6,182,212,0.1)]"
+                              ? "bg-brand-cyan/10 text-brand-cyan border-brand-cyan/45 shadow-[0_0_8px_rgba(6,182,212,0.06)]"
                               : "bg-slate-950/60 border-slate-900 text-slate-400 hover:text-slate-200 hover:border-slate-800"
                           }`}
                         >
@@ -353,7 +353,7 @@ export default function InteractiveEstimator({ onEstimateComplete }: EstimatorPr
 
               <button
                 onClick={handleSendToForm}
-                className="w-full inline-flex items-center justify-center gap-2 px-5 py-4 text-xs sm:text-sm font-bold text-brand-navy-dark bg-gradient-to-r from-brand-cyan to-brand-teal rounded-xl hover:shadow-[0_0_18px_rgba(6,182,212,0.35)] transition-all hover:scale-[1.02] active:scale-95"
+                className="w-full inline-flex items-center justify-center gap-2 px-5 py-4 text-xs sm:text-sm font-bold text-brand-navy-dark bg-gradient-to-r from-brand-cyan to-brand-teal rounded-xl hover:shadow-[0_0_12px_rgba(6,182,212,0.24)] transition-all hover:scale-[1.02] active:scale-95"
               >
                 ส่งผลประเมินเพื่อรับใบเสนอราคาฟรี
                 <ArrowRight size={14} />

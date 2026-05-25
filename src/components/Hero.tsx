@@ -7,8 +7,8 @@ export default function Hero() {
   return (
     <section className="relative pt-32 pb-20 md:pt-40 md:pb-32 overflow-hidden bg-gradient-to-b from-[#050814] via-[#090f24] to-[#050814] dashboard-grid-line">
       {/* Background blobs for ambient glow */}
-      <div className="absolute top-0 right-1/4 w-[450px] h-[450px] bg-brand-cyan/8 rounded-full blur-[100px] -z-10 animate-pulse-slow" />
-      <div className="absolute bottom-1/4 left-1/4 w-[500px] h-[500px] bg-brand-teal/5 rounded-full blur-[120px] -z-10" />
+      <div className="absolute top-0 right-1/4 w-[450px] h-[450px] bg-brand-cyan/5 rounded-full blur-[110px] -z-10" />
+      <div className="absolute bottom-1/4 left-1/4 w-[500px] h-[500px] bg-brand-teal/3 rounded-full blur-[130px] -z-10" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
@@ -16,7 +16,7 @@ export default function Hero() {
           {/* Left Column: Premium Value Proposition */}
           <div className="lg:col-span-7 flex flex-col gap-6 text-left relative z-10">
             <div className="inline-flex items-center gap-2 self-start bg-gradient-to-r from-brand-cyan/10 to-brand-teal/10 border border-brand-cyan/20 px-3.5 py-1.5 rounded-full text-2xs text-brand-cyan font-bold tracking-wide uppercase">
-              <span className="w-1.5 h-1.5 rounded-full bg-brand-cyan animate-ping"></span>
+              <span className="w-1.5 h-1.5 rounded-full bg-brand-cyan"></span>
               Next-Gen Accounting for Thai SME
             </div>
             
@@ -78,7 +78,7 @@ export default function Hero() {
             <div className="flex flex-col sm:flex-row gap-4 mt-6">
               <a
                 href="#estimator"
-                className="inline-flex items-center justify-center px-6 py-4 text-xs sm:text-sm font-extrabold text-brand-navy-dark bg-gradient-to-r from-brand-cyan via-brand-teal to-brand-cyan bg-[size:200%_auto] hover:bg-[right_center] rounded-xl hover:shadow-[0_0_25px_rgba(6,182,212,0.4)] transition-all hover:scale-105"
+                className="inline-flex items-center justify-center px-6 py-4 text-xs sm:text-sm font-extrabold text-brand-navy-dark bg-gradient-to-r from-brand-cyan via-brand-teal to-brand-cyan bg-[size:200%_auto] hover:bg-[right_center] rounded-xl hover:shadow-[0_0_16px_rgba(6,182,212,0.24)] transition-all hover:scale-105"
               >
                 ประเมินแพ็กเกจด้วยตัวเองใน 3 นาที
                 <ChevronRight size={16} className="ml-1" />
@@ -95,7 +95,7 @@ export default function Hero() {
           {/* Right Column: Next-Gen SaaS Dashboard Mockup */}
           <div className="lg:col-span-5 relative w-full flex justify-center lg:justify-end mt-12 lg:mt-0">
             {/* Ambient Backlight for Dashboard */}
-            <div className="absolute inset-0 bg-gradient-to-tr from-brand-cyan/20 to-brand-teal/20 blur-3xl opacity-30 pointer-events-none rounded-2xl" />
+            <div className="absolute inset-0 bg-gradient-to-tr from-brand-cyan/12 to-brand-teal/12 blur-3xl opacity-20 pointer-events-none rounded-2xl" />
 
             {/* Dashboard Mockup Panel */}
             <div className="w-full max-w-[430px] glass-card-premium rounded-2xl p-5 border border-brand-cyan/20 shadow-2xl relative overflow-hidden">
@@ -109,7 +109,7 @@ export default function Hero() {
                   <span className="text-4xs text-slate-400 font-mono tracking-wider ml-1.5 uppercase">A&N Accounting Hub</span>
                 </div>
                 <div className="flex items-center gap-1.5">
-                  <span className="w-1.5 h-1.5 bg-emerald-400 rounded-full animate-ping" />
+                  <span className="w-1.5 h-1.5 bg-emerald-400 rounded-full" />
                   <span className="text-4xs text-emerald-400 font-mono font-bold tracking-widest uppercase">LIVE SECURE</span>
                 </div>
               </div>
@@ -121,11 +121,11 @@ export default function Hero() {
                     <FileText size={14} className="text-brand-cyan" />
                     <span className="text-3xs font-semibold text-white font-mono">INV-2026-0048.pdf</span>
                   </div>
-                  <span className="text-4xs text-brand-cyan font-mono animate-pulse">AI Scanning...</span>
+                  <span className="text-4xs text-brand-cyan font-mono">AI Scanning...</span>
                 </div>
                 {/* Scanner bar animation */}
                 <div className="w-full bg-slate-900 h-1.5 rounded-full relative overflow-hidden">
-                  <div className="bg-gradient-to-r from-brand-cyan via-brand-teal to-brand-cyan h-1.5 rounded-full w-2/3 animate-pulse" />
+                  <div className="bg-gradient-to-r from-brand-cyan via-brand-teal to-brand-cyan h-1.5 rounded-full w-2/3" />
                 </div>
                 <div className="flex justify-between text-4xs text-slate-500 mt-2 font-mono">
                   <span>ตรวจพบคู่ค้า: บจก. ซัพพลายโก</span>
@@ -184,9 +184,9 @@ export default function Hero() {
                 </div>
                 
                 <div className="flex items-center justify-between text-xs pt-1">
-                  <span className="text-slate-300 flex items-center gap-1.5"><Clock size={14} className="text-brand-gold-light animate-pulse" /> Human Accountant Review</span>
+                  <span className="text-slate-300 flex items-center gap-1.5"><Clock size={14} className="text-brand-gold-light" /> Human Accountant Review</span>
                   <span className="font-bold text-brand-gold-light flex items-center gap-1 font-mono text-3xs">
-                    <span className="w-1.5 h-1.5 bg-brand-gold-light rounded-full animate-ping" />
+                    <span className="w-1.5 h-1.5 bg-brand-gold-light rounded-full" />
                     Reviewing Entries
                   </span>
                 </div>

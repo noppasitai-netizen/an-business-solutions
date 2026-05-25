@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Prompt, Inter } from "next/font/google";
+import { Prompt, Inter, Sarabun } from "next/font/google";
 import "./globals.css";
 
 const prompt = Prompt({
@@ -12,6 +12,13 @@ const prompt = Prompt({
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
+  display: "swap",
+});
+
+const sarabun = Sarabun({
+  weight: ["300", "400", "500", "600", "700"],
+  subsets: ["thai", "latin"],
+  variable: "--font-sarabun",
   display: "swap",
 });
 
@@ -95,7 +102,7 @@ export default function RootLayout({
   return (
     <html
       lang="th"
-      className={`${prompt.variable} ${inter.variable} scroll-smooth`}
+      className={`${prompt.variable} ${inter.variable} ${sarabun.variable} scroll-smooth`}
     >
       <head>
         <script

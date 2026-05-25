@@ -243,17 +243,17 @@ export default function TaxRiskChecker({ onCheckComplete }: RiskCheckerProps) {
 
                 <div className="flex justify-center mb-4">
                   {result.rating === "Low" && (
-                    <div className="p-4 bg-emerald-500/10 border border-emerald-500/25 text-emerald-400 rounded-full shadow-[0_0_20px_rgba(16,185,129,0.15)]">
+                    <div className="p-4 bg-emerald-500/10 border border-emerald-500/25 text-emerald-400 rounded-full shadow-[0_0_12px_rgba(16,185,129,0.1)]">
                       <Award size={48} />
                     </div>
                   )}
                   {result.rating === "Medium" && (
-                    <div className="p-4 bg-amber-500/10 border border-amber-500/25 text-amber-400 rounded-full shadow-[0_0_20px_rgba(245,158,11,0.15)]">
+                    <div className="p-4 bg-amber-500/10 border border-amber-500/25 text-amber-400 rounded-full shadow-[0_0_12px_rgba(245,158,11,0.1)]">
                       <AlertTriangle size={48} />
                     </div>
                   )}
                   {result.rating === "High" && (
-                    <div className="p-4 bg-rose-500/10 border border-rose-500/25 text-rose-500 rounded-full shadow-[0_0_25px_rgba(244,63,94,0.2)] animate-bounce">
+                    <div className="p-4 bg-rose-500/10 border border-rose-500/25 text-rose-500 rounded-full shadow-[0_0_14px_rgba(244,63,94,0.12)]">
                       <ShieldAlert size={48} />
                     </div>
                   )}
@@ -302,7 +302,7 @@ export default function TaxRiskChecker({ onCheckComplete }: RiskCheckerProps) {
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-2 max-w-md mx-auto">
                 <button
                   onClick={handleSendToForm}
-                  className="w-full inline-flex items-center justify-center gap-2 px-6 py-4 text-xs sm:text-sm font-bold text-brand-navy-dark bg-gradient-to-r from-brand-cyan to-brand-teal rounded-xl hover:shadow-[0_0_15px_rgba(6,182,212,0.4)] transition-all hover:scale-105 active:scale-95"
+                  className="w-full inline-flex items-center justify-center gap-2 px-6 py-4 text-xs sm:text-sm font-bold text-brand-navy-dark bg-gradient-to-r from-brand-cyan to-brand-teal rounded-xl hover:shadow-[0_0_12px_rgba(6,182,212,0.24)] transition-all hover:scale-105 active:scale-95"
                 >
                   ให้ที่ปรึกษา A&N ช่วยวางแผนลดความเสี่ยงฟรี
                   <ArrowRight size={16} />
