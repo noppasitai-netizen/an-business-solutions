@@ -41,7 +41,7 @@ export default function Pricing({ onSelectPackage }: PricingProps) {
     },
     {
       name: "Smart VAT",
-      price: "4,500",
+      price: "5,900",
       tag: "สำหรับธุรกิจจด VAT",
       bestFor: "SME ที่มีซื้อขายทั่วไปทุกเดือน",
       includes: [
@@ -62,7 +62,7 @@ export default function Pricing({ onSelectPackage }: PricingProps) {
     },
     {
       name: "Growth",
-      price: "6,500",
+      price: "8,900",
       tag: "แนะนำเป็นพิเศษ",
       bestFor: "ธุรกิจเอกสารปานกลาง มีพนักงาน และต้องการสรุปแบบย่อ",
       includes: [
@@ -83,7 +83,7 @@ export default function Pricing({ onSelectPackage }: PricingProps) {
     },
     {
       name: "Controller",
-      price: "9,500",
+      price: "13,500",
       tag: "บัญชีเชิงบริหาร",
       bestFor: "ธุรกิจที่ต้องการระบบวิเคราะห์ภาพรวมและการควบคุมการเงิน",
       includes: [
@@ -109,8 +109,10 @@ export default function Pricing({ onSelectPackage }: PricingProps) {
     { name: "ประกันสังคม Standalone (นำส่งรายเดือนอย่างเดียว)", price: "2,500 บาท / เดือน" },
     { name: "ยื่นแบบแสดงรายการรายครั้ง (ภงด.1, ภงด.3, ภงด.53 หรือ ภพ.30)", price: "500 บาท / แบบ / ครั้ง" },
     { name: "จัดทำ 50 ทวิ หรือ ภงด.1ก สรุปรายปี", price: "เริ่มต้น 1,500 บาท / ปี" },
-    { name: "ปิดงบการเงินประจำปี (สำหรับลูกค้าทำบัญชีรายเดือน)", price: "เริ่มต้น 9,900 บาท / ปี" },
-    { name: "ปิดงบการเงินประจำปี (สำหรับลูกค้าทั่วไป)", price: "เริ่มต้น 12,000 บาท / ปี" },
+    { name: "เอกสารส่วนเกินโควตา", price: "20 บาท/รายการ (เมื่อเกิน 10% ของโควตาแพ็กเกจ)" },
+    { name: "ปิดงบการเงินประจำปี (ลูกค้ารายเดือน: เอกสารน้อย / ยังไม่จด VAT)", price: "9,900 บาท / ปี" },
+    { name: "ปิดงบการเงินประจำปี (ลูกค้ารายเดือน: เอกสารมากขึ้น / จด VAT)", price: "14,900 บาท / ปี" },
+    { name: "ปิดงบการเงินประจำปี (สำหรับลูกค้าทั่วไป)", price: "ประเมินเป็นกรณีไป" },
     { name: "ตรวจสอบเอกสารย้อนหลัง / คีย์ข้อมูลย้อนหลัง", price: "เริ่มต้น 3,000 บาท / เดือนย้อนหลัง" },
     { name: "จดทะเบียนภาษีมูลค่าเพิ่มออนไลน์ (VAT)", price: "2,900 บาท" },
     { name: "ขึ้นทะเบียนประกันสังคมนายจ้างใหม่", price: "2,900 บาท" },
@@ -225,7 +227,7 @@ export default function Pricing({ onSelectPackage }: PricingProps) {
           </div>
           <div className="text-center md:text-right shrink-0">
             <span className="text-4xs text-slate-500 block font-mono font-bold uppercase tracking-wider">เริ่มต้น</span>
-            <span className="text-xl sm:text-2xl font-black text-brand-teal block mb-3 font-mono">12,000 บาท/เดือน</span>
+            <span className="text-xl sm:text-2xl font-black text-brand-teal block mb-3 font-mono">18,000 บาท/เดือน</span>
             <button
               onClick={() => handleSelect("Custom / Multi-Branch")}
               className="inline-flex items-center gap-1.5 px-5 py-3.5 text-2xs font-extrabold text-brand-navy-dark bg-gradient-to-r from-brand-cyan to-brand-teal rounded-xl hover:shadow-[0_0_12px_rgba(6,182,212,0.22)] transition-all hover:scale-105 active:scale-95"

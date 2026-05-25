@@ -26,7 +26,7 @@ export function CalculatePackage(
   if (isCustomOrComplex) {
     return {
       pkg: "Custom / Multi-Branch",
-      price: "เริ่มต้น 12,000 บาท/เดือน",
+      price: "เริ่มต้น 18,000 บาท/เดือน",
       includes: [
         "ออกแบบระบบบัญชีและการจัดส่งเอกสารตามลักษณะกิจการเฉพาะทาง",
         "ทำบัญชีรายเดือน-แยกแผนก หรือแยกสาขา",
@@ -44,7 +44,7 @@ export function CalculatePackage(
   if (documentCount === "121–220" || employeeCount === "6–10") {
     return {
       pkg: "Controller (บัญชีเชิงบริหาร)",
-      price: "9,500 บาท/เดือน",
+      price: "13,500 บาท/เดือน",
       includes: [
         "เอกสารไม่เกิน 220 รายการ/เดือน",
         "ทำบัญชีรายเดือนครบชุด",
@@ -62,7 +62,7 @@ export function CalculatePackage(
   if (documentCount === "71–120" || employeeCount === "1–5") {
     return {
       pkg: "Growth (แนะนำ)",
-      price: "6,500 บาท/เดือน",
+      price: "8,900 บาท/เดือน",
       includes: [
         "เอกสารไม่เกิน 120 รายการ/เดือน",
         "ทำบัญชีรายเดือน",
@@ -80,7 +80,7 @@ export function CalculatePackage(
   if (hasVat === "จด VAT แล้ว" || documentCount === "31–70") {
     return {
       pkg: "Smart VAT",
-      price: "4,500 บาท/เดือน",
+      price: "5,900 บาท/เดือน",
       includes: [
         "เอกสารไม่เกิน 70 รายการ/เดือน",
         "ทำบัญชีรายเดือน",
