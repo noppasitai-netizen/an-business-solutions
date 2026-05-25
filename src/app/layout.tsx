@@ -23,6 +23,7 @@ const sarabun = Sarabun({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://annbusiness.com"),
   title: "สำนักงานบัญชี SME พร้อมระบบอัตโนมัติ | A&N Business Solutions",
   description: "รับทำบัญชีรายเดือน ยื่นภาษี ปิดงบการเงิน ประกันสังคม งานทะเบียนบริษัท และวางระบบบัญชีสำหรับ SME พร้อมระบบคัดกรองเอกสาร แจ้งเตือนเดดไลน์ และลดงานซ้ำ โดยทีมนักบัญชีหรือผู้ทำบัญชีตรวจทานก่อนยื่นจริง",
   keywords: [
@@ -51,7 +52,7 @@ export const metadata: Metadata = {
     type: "website",
   },
   alternates: {
-    canonical: "https://www.annbusiness.com",
+    canonical: "https://annbusiness.com",
   },
 };
 
@@ -66,12 +67,12 @@ export default function RootLayout({
     "@type": "AccountingService",
     "name": "บริษัท เอ แอนด์ เอ็น บิสซิเนส โซลูชั่นส์ จำกัด (A&N Business Solutions Co., Ltd.)",
     "alternateName": "A&N Business Solutions",
-    "image": "https://www.annbusiness.com/logo.png",
+    "image": "https://annbusiness.com/logo.png",
     "description": "สำนักงานบัญชีสำหรับ SME ไทย ให้บริการทำบัญชีรายเดือน ภาษีรายเดือน ประกันสังคม ปิดงบการเงิน วางระบบบัญชี และระบบอัตโนมัติสำหรับงานบัญชี",
     "taxID": "0115567033027",
     "telephone": "098-912-3711",
     "email": "Noppasit@annbusiness.com",
-    "url": "https://www.annbusiness.com",
+    "url": "https://annbusiness.com",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "ตลาดพีทีที ปาร์ค มอลล์ 25/131 หมู่ที่ 2 ต.บางแก้ว อ.บางพลี",
