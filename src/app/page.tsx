@@ -16,6 +16,7 @@ import Industries from "@/components/Industries";
 import Process from "@/components/Process";
 import DashboardPreview from "@/components/DashboardPreview";
 import FAQ from "@/components/FAQ";
+import LocationContact from "@/components/LocationContact";
 import LeadForm from "@/components/LeadForm";
 import Footer from "@/components/Footer";
 import StickyMobileCTA from "@/components/StickyMobileCTA";
@@ -91,7 +92,10 @@ export default function Home() {
         {/* 14. Dynamic Collapsible FAQ */}
         <FAQ />
 
-        {/* 15. Conversion Lead Form */}
+        {/* 15. Real Location & Contact */}
+        <LocationContact />
+
+        {/* 16. Conversion Lead Form */}
         <LeadForm
           prefilledPackage={selectedPackage}
           prefilledEstimatorData={estimatorData}

@@ -28,6 +28,7 @@ export default function Header() {
     { label: "แพ็กเกจ", href: "#pricing" },
     { label: "เดดไลน์ภาษี", href: "#deadlines" },
     { label: "คำถามที่พบบ่อย", href: "#faq" },
+    { label: "ที่ตั้ง", href: "#location-contact" },
     { label: "ติดต่อเรา", href: "#contact" },
   ];
 
