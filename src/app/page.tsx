@@ -5,6 +5,7 @@ import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import TrustBar from "@/components/TrustBar";
 import Team from "@/components/Team";
+import Testimonials from "@/components/Testimonials";
 import InteractiveEstimator, { EstimatorResult } from "@/components/InteractiveEstimator";
 import TaxRiskChecker, { RiskResult } from "@/components/TaxRiskChecker";
 import AIWorkflowDemo from "@/components/AIWorkflowDemo";
@@ -57,37 +58,40 @@ export default function Home() {
         {/* 3. Team & Responsible Accountant */}
         <Team />
 
-        {/* 4. Services Grid */}
+        {/* 4. Customer Testimonials */}
+        <Testimonials />
+
+        {/* 5. Services Grid */}
         <Services />
 
-        {/* 5. Interactive Workflow Timeline & Mock Panels */}
+        {/* 6. Interactive Workflow Timeline & Mock Panels */}
         <AIWorkflowDemo />
 
-        {/* 6. Cost Estimator Pricing Calculator */}
+        {/* 7. Cost Estimator Pricing Calculator */}
         <InteractiveEstimator onEstimateComplete={handleEstimateComplete} />
 
-        {/* 7. Tax Risk Diagnostic Checker */}
+        {/* 8. Tax Risk Diagnostic Checker */}
         <TaxRiskChecker onCheckComplete={handleRiskComplete} />
 
-        {/* 8. Detailed Pricing Packages & Add-on Table */}
+        {/* 9. Detailed Pricing Packages & Add-on Table */}
         <Pricing onSelectPackage={handleSelectPackage} />
 
-        {/* 9. Tax & Social Deadlines Reminders */}
+        {/* 10. Tax & Social Deadlines Reminders */}
         <DeadlineReminder />
 
-        {/* 10. Dashboard Preview Portal Mockup */}
+        {/* 11. Dashboard Preview Portal Mockup */}
         <DashboardPreview />
 
-        {/* 11. Industry Specific Solutions */}
+        {/* 12. Industry Specific Solutions */}
         <Industries />
 
-        {/* 12. Customer Onboarding Onboarding Process */}
+        {/* 13. Customer Onboarding Onboarding Process */}
         <Process />
 
-        {/* 13. Dynamic Collapsible FAQ */}
+        {/* 14. Dynamic Collapsible FAQ */}
         <FAQ />
 
-        {/* 14. Conversion Lead Form */}
+        {/* 15. Conversion Lead Form */}
         <LeadForm
           prefilledPackage={selectedPackage}
           prefilledEstimatorData={estimatorData}

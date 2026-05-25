@@ -22,6 +22,7 @@ export default function Header() {
   const navItems = [
     { label: "บริการ", href: "#services" },
     { label: "ทีมงาน", href: "#team" },
+    { label: "รีวิว", href: "#testimonials" },
     { label: "ระบบ AI", href: "#ai-workflow" },
     { label: "ประเมินราคา", href: "#estimator" },
     { label: "แพ็กเกจ", href: "#pricing" },
