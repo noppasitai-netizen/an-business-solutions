@@ -4,6 +4,7 @@ import React, { useState, useCallback } from "react";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import TrustBar from "@/components/TrustBar";
+import Team from "@/components/Team";
 import InteractiveEstimator, { EstimatorResult } from "@/components/InteractiveEstimator";
 import TaxRiskChecker, { RiskResult } from "@/components/TaxRiskChecker";
 import AIWorkflowDemo from "@/components/AIWorkflowDemo";
@@ -53,37 +54,40 @@ export default function Home() {
         {/* 2. Key Pillars Trust Bar */}
         <TrustBar />
 
-        {/* 3. Services Grid */}
+        {/* 3. Team & Responsible Accountant */}
+        <Team />
+
+        {/* 4. Services Grid */}
         <Services />
 
-        {/* 4. Interactive AI Workflow Timeline & Mock Panels */}
+        {/* 5. Interactive Workflow Timeline & Mock Panels */}
         <AIWorkflowDemo />
 
-        {/* 5. Cost Estimator Pricing Calculator */}
+        {/* 6. Cost Estimator Pricing Calculator */}
         <InteractiveEstimator onEstimateComplete={handleEstimateComplete} />
 
-        {/* 6. Tax Risk Diagnostic Checker */}
+        {/* 7. Tax Risk Diagnostic Checker */}
         <TaxRiskChecker onCheckComplete={handleRiskComplete} />
 
-        {/* 7. Detailed Pricing Packages & Add-on Table */}
+        {/* 8. Detailed Pricing Packages & Add-on Table */}
         <Pricing onSelectPackage={handleSelectPackage} />
 
-        {/* 8. Tax & Social Deadlines Reminders */}
+        {/* 9. Tax & Social Deadlines Reminders */}
         <DeadlineReminder />
 
-        {/* 9. Dashboard Preview Portal Mockup */}
+        {/* 10. Dashboard Preview Portal Mockup */}
         <DashboardPreview />
 
-        {/* 10. Industry Specific Solutions */}
+        {/* 11. Industry Specific Solutions */}
         <Industries />
 
-        {/* 11. Customer Onboarding Onboarding Process */}
+        {/* 12. Customer Onboarding Onboarding Process */}
         <Process />
 
-        {/* 12. Dynamic Collapsible FAQ */}
+        {/* 13. Dynamic Collapsible FAQ */}
         <FAQ />
 
-        {/* 13. Conversion Lead Form */}
+        {/* 14. Conversion Lead Form */}
         <LeadForm
           prefilledPackage={selectedPackage}
           prefilledEstimatorData={estimatorData}
